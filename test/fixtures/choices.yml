@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  interest: one
+  suggested_events: one
+
+two:
+  user: two
+  interest: two
+  suggested_events: two
