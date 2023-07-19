@@ -1,5 +1,5 @@
 class Choice < ApplicationRecord
   belongs_to :user
-  belongs_to :interest
-  belongs_to :suggested_events
+  has_many :interests
+  has_many :suggested_events, through: :interests
 end
