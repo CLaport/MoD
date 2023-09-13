@@ -9,13 +9,13 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-  
+
   <body>
-    <%= render "shared/navbar" %>
-    <%= render "shared/flashes" %>
-    <%= yield %>
+    <%#= render "shared/navbar" %>
+    <%#= render "shared/flashes" %>
     <% if user_signed_in? %>
-    <h2>Hi <%= current_user.email %></h2>
+      <h2>Hi <%= current_user.email %></h2>
     <% end %>
+    <%= yield %>
   </body>
 </html>
